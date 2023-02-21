@@ -3,7 +3,7 @@
     double Promt(string message)
     {
       Console.WriteLine(message);
-      string str = Console.ReadLine();
+      string str = Console.ReadLine() ?? String.Empty;
       double result = Convert.ToDouble(str);
       return result;
     }
