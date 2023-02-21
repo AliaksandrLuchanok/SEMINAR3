@@ -8,7 +8,7 @@
 double Promt (string message)
 {
   Console.WriteLine(message);
-  string numberString = Console.ReadLine();
+  string numberString = Console.ReadLine() ?? String.Empty;
   double result = Convert.ToDouble(numberString);
   return result;
 }
