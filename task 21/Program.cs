@@ -23,7 +23,7 @@
       double result = 0;
       for (int i = 0; i < coordinatePointIn1.Length; i++)
       {
-        result = result + Math.Pow(coordinatePointIn2[i], 2) - Math.Pow(coordinatePointIn1[i], 2);
+        result = result + Math.Pow((coordinatePointIn2[i] - coordinatePointIn1[i]), 2);
       }
       result = Math.Round(Math.Sqrt(result), 3);
 
